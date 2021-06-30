@@ -1,5 +1,6 @@
 body {
     background-color: #f1f1f1;
+    padding: 0px;
 }
 
 .nav-main{
@@ -73,7 +74,7 @@ body {
     list-style: none;
 }
 
-.nav-sidebar ul li span, .nav-sidebar ul li a {
+.nav-sidebar ul li span, .nav-sidebar ul li a{
     display: block;
     height: 60px;
     padding: 0 10px;
@@ -90,7 +91,6 @@ body {
 .nav-sidebar ul li a:hover{
     background-color: #222;
 }
-
 
 .blauw {
     background-color: blue;

@@ -34,24 +34,89 @@ let toggleNav = function () {
     }
 }
 
-const changeBackgroundColor = document.querySelector("blauw");
-function changeBackgroundColorOnBody() {
-    blauw.backgroundColor = "blauw"
-};
-blauw.addEventListener("click", changeBackgroundColor);
+const bodyBackground = document.querySelector("body");
 
-// mybutton.addEventListener("click", changeText);
-// function changeText() {
-//   mybutton.textContent = "Button clicked"
+const blueListItem = document.querySelector(".blueBG");
+const makeBackgroundBlue = () => {
+    bodyBackground.classList.add("blauw");
+}
+blueListItem.addEventListener("click", makeBackgroundBlue);
+
+
+
+// const bodyBackground = document.querySelector('body');
+// bodyBackground.classList.add('blauw');
+
+// const bodyBackground = document.querySelector("body");
+// const maakAchtergrondBlauw = () => {
+//     bodyBackground.classList.add("blauw");
+// }
+// bodyBackground.addEventListener("click", maakAchtergrondBlauw);
+
+// const blauwAchtergrond = document.querySelector("body");
+// const maakAchtergrondBlauw = () => {
+//     blauwAchtergrond.classList.add("blauw");
+// }
+// blauwAchtergrond.addEventListener("click", maakAchtergrondBlauw);
+// const geelAchtergrond = document.querySelector("body");
+// const maakAchtergrondGeel = () => {
+//     geelAchtergrond.classList.add("geel");
+// }
+// geelAchtergrond.addEventListener("click", maakAchtergrondGeel);
+// const groenAchtergrond = document.querySelector("body");
+// const maakAchtergrondGroen = () => {
+//     groenAchtergrond.classList.add("groen");
+// }
+// groenAchtergrond.addEventListener("click", maakAchtergrondGroen);
+// const roodAchtergrond = document.querySelector("body");
+// const maakAchtergrondRood = () => {
+//     roodAchtergrond.classList.add("rood");
+// }
+// roodAchtergrond.addEventListener("click", maakAchtergrondRood);
+
+
+// const bodyBackground = document.querySelector("body");
+
+// const makeBackgroundBlue = () => {
+//     bodyBackground.classList.add(".blauw");
 // };
-// const colorButton = document.querySelector("mybutton2");
-// const toggleBackgroundColorOnMyButton2 = () => {
-//   mybutton2.classList.toggle("redBackground");
+// bodyBackground.addEventListener("click", makeBackgroundBlue);
+
+
+// // const blueBackground = document.querySelector("blauw");
+
+
+
+// const bodyBackgroundBlauw = document.querySelector("body");
+// bodyBackgroundBlauw.classList.add("blauw");
+// function changeBackgroundColorOnBody() {
+//     bodyBackgroundBlauw.addEventListener("click", blauw);
+// }
+
+// const bodyBackground = document.querySelector("body");
+// bodyBackground.classList.add("blauw");
+// function changeBackgroundColorOnBody() {
+//     bodyBackground.addEventListener("click", blauw);
+// }
+
+
+// if (BodyBackgroundBlauw === true) {
+//     bodyBackgroundBlauw.addEventListener("click", blauw);
+//         }
+//         else if (BodyBackgroundBlauw = false)
+// bodyBackgroundBlauw.addEventListener("click", blauw);
+
+
+// const bodyBackground = document.querySelector("body");
+// bodyBackground.classList.add("blauw");
+// bodyBackground.addEventListener("click", makeBodyBackgroundBlue);
+
+
+// const changeBackgroundColor = document.querySelector("blauw");
+// function changeBackgroundColorOnBody() {
+//     blauw.backgroundColor = "blauw"
 // };
-// mybutton2.addEventListener("click", toggleBackgroundColorOnMyButton2);
-
-
-
+// blauw.addEventListener("click", changeBackgroundColor);
 
 // const backgroundColor = function () {
 //     const blauw = document.querySelector(".blauw");
