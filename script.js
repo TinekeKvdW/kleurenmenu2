@@ -34,23 +34,47 @@ let toggleNav = function () {
     }
 }
 
-const bodyBackground = document.querySelector('body');
+const bodyBackground = document.querySelector("body");
 
-const blueListItem = document.querySelector('.blueBG');
+const blueListItem = document.querySelector(".blauw");
+const makeBackgroundBlue = () => {
+    bodyBackground.removeAttribute("class");
+    bodyBackground.classList.add("blauw");
+}
+blueListItem.addEventListener("click", makeBackgroundBlue);
 
-blueListItem.addEventListener('click', () => {
-    bodyBackground.removeAttribute('class');
-    bodyBackground.classList.add('blauw');
-});
+const yellowListItem = document.querySelector(".geel");
+const makeBackgroundYellow = () => {
+    bodyBackground.removeAttribute("class");
+    bodyBackground.classList.add("geel");
+}
+yellowListItem.addEventListener("click", makeBackgroundYellow);
+
+const greenListItem = document.querySelector(".groen");
+const makeBackgroundGreen = () => {
+    bodyBackground.removeAttribute("class");
+    bodyBackground.classList.add("groen");
+}
+greenListItem.addEventListener("click", makeBackgroundGreen);
+
+const redListItem = document.querySelector(".rood");
+const makeBackgroundRed = () => {
+    bodyBackground.removeAttribute("class");
+    bodyBackground.classList.add("rood");
+}
+redListItem.addEventListener("click", makeBackgroundRed);
 
 
 // const bodyBackground = document.querySelector("body");
 
-// const blueListItem = document.querySelector(".blueBG");
-// const makeBackgroundBlue = () => {
+// const blueListItem = document.querySelector("#blueBG");
+
+// blueListItem.addEventListener("click", () => {
 //     bodyBackground.removeAttribute("class");
 //     bodyBackground.classList.add("blauw");
-// }
-// blueListItem.addEventListener("click", makeBackgroundBlue);
+// });
+
+
+
 
 
