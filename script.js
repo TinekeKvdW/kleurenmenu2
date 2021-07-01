@@ -34,109 +34,23 @@ let toggleNav = function () {
     }
 }
 
-const bodyBackground = document.querySelector("body");
+const bodyBackground = document.querySelector('body');
 
-const blueListItem = document.querySelector(".blueBG");
-const makeBackgroundBlue = () => {
-    bodyBackground.classList.add("blauw");
-}
-blueListItem.addEventListener("click", makeBackgroundBlue);
+const blueListItem = document.querySelector('.blueBG');
 
+blueListItem.addEventListener('click', () => {
+    bodyBackground.removeAttribute('class');
+    bodyBackground.classList.add('blauw');
+});
 
-
-// const bodyBackground = document.querySelector('body');
-// bodyBackground.classList.add('blauw');
 
 // const bodyBackground = document.querySelector("body");
-// const maakAchtergrondBlauw = () => {
+
+// const blueListItem = document.querySelector(".blueBG");
+// const makeBackgroundBlue = () => {
+//     bodyBackground.removeAttribute("class");
 //     bodyBackground.classList.add("blauw");
 // }
-// bodyBackground.addEventListener("click", maakAchtergrondBlauw);
-
-// const blauwAchtergrond = document.querySelector("body");
-// const maakAchtergrondBlauw = () => {
-//     blauwAchtergrond.classList.add("blauw");
-// }
-// blauwAchtergrond.addEventListener("click", maakAchtergrondBlauw);
-// const geelAchtergrond = document.querySelector("body");
-// const maakAchtergrondGeel = () => {
-//     geelAchtergrond.classList.add("geel");
-// }
-// geelAchtergrond.addEventListener("click", maakAchtergrondGeel);
-// const groenAchtergrond = document.querySelector("body");
-// const maakAchtergrondGroen = () => {
-//     groenAchtergrond.classList.add("groen");
-// }
-// groenAchtergrond.addEventListener("click", maakAchtergrondGroen);
-// const roodAchtergrond = document.querySelector("body");
-// const maakAchtergrondRood = () => {
-//     roodAchtergrond.classList.add("rood");
-// }
-// roodAchtergrond.addEventListener("click", maakAchtergrondRood);
+// blueListItem.addEventListener("click", makeBackgroundBlue);
 
 
-// const bodyBackground = document.querySelector("body");
-
-// const makeBackgroundBlue = () => {
-//     bodyBackground.classList.add(".blauw");
-// };
-// bodyBackground.addEventListener("click", makeBackgroundBlue);
-
-
-// // const blueBackground = document.querySelector("blauw");
-
-
-
-// const bodyBackgroundBlauw = document.querySelector("body");
-// bodyBackgroundBlauw.classList.add("blauw");
-// function changeBackgroundColorOnBody() {
-//     bodyBackgroundBlauw.addEventListener("click", blauw);
-// }
-
-// const bodyBackground = document.querySelector("body");
-// bodyBackground.classList.add("blauw");
-// function changeBackgroundColorOnBody() {
-//     bodyBackground.addEventListener("click", blauw);
-// }
-
-
-// if (BodyBackgroundBlauw === true) {
-//     bodyBackgroundBlauw.addEventListener("click", blauw);
-//         }
-//         else if (BodyBackgroundBlauw = false)
-// bodyBackgroundBlauw.addEventListener("click", blauw);
-
-
-// const bodyBackground = document.querySelector("body");
-// bodyBackground.classList.add("blauw");
-// bodyBackground.addEventListener("click", makeBodyBackgroundBlue);
-
-
-// const changeBackgroundColor = document.querySelector("blauw");
-// function changeBackgroundColorOnBody() {
-//     blauw.backgroundColor = "blauw"
-// };
-// blauw.addEventListener("click", changeBackgroundColor);
-
-// const backgroundColor = function () {
-//     const blauw = document.querySelector(".blauw");
-//     blauw.addEventListener("click", makeBodyBackgroundBlauw);
-//     if (makeBodyBackgroundBlauw === true) {
-//         blauw.classList.add("blauw body");
-//     }
-//     else if (makeBodyBackgroundBlauw = false)
-
-//     const geel = document.querySelector(".geel");
-//     const groen = document.querySelector(".groen");
-//     const rood = document.querySelector(".rood");
-
-//     const makeBodyBackgroundBlauw = () => {
-//         // blauw.classList.remove("geel");
-//         // blauw.classList.remove("groen");
-//         // blauw.classList.remove("rood");
-//         blauw.classList.add("blauw");
-//     }
-
-
-// }
-// 
