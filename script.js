@@ -1,36 +1,17 @@
-let toggleNavStatus = false;
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
-let toggleNav = function () {
-    let getSidebar = document.querySelector(".nav-sidebar");
-    let getSidebarUl = document.querySelector(".nav-sidebar ul");
-    let getSidebarTitle = document.querySelector(".nav-sidebar span");
-    let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
-
-    if (toggleNavStatus === false) {
-        getSidebarUl.style.visibility = "visible";
-        getSidebar.style.width = "272px";
-        getSidebarTitle.style.opacity = "0.5";
-
-        let arrayLength = getSidebarLinks.length;
-        for (let i = 0; i < arrayLength; i++) {
-            getSidebarLinks[i].style.opacity = "1";
+window.onclick = function (event) {
+    if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
+            }
         }
-
-        toggleNavStatus = true;
-    }
-
-    else if (toggleNavStatus === true) {
-        getSidebar.style.width = "50px";
-        getSidebarTitle.style.opacity = "0";
-
-        let arrayLength = getSidebarLinks.length;
-        for (let i = 0; i < arrayLength; i++) {
-            getSidebarLinks[i].style.opacity = "0";
-        }
-
-        getSidebarUl.style.visibility = "hidden";
-
-        toggleNavStatus = false;
     }
 }
 
@@ -63,18 +44,3 @@ const makeBackgroundRed = () => {
     bodyBackground.classList.add("rood");
 }
 redListItem.addEventListener("click", makeBackgroundRed);
-
-
-// const bodyBackground = document.querySelector("body");
-
-// const blueListItem = document.querySelector("#blueBG");
-
-// blueListItem.addEventListener("click", () => {
-//     bodyBackground.removeAttribute("class");
-//     bodyBackground.classList.add("blauw");
-// });
-
-
-
-
-

@@ -1,84 +1,55 @@
-body {
-    background-color: #f1f1f1;
-    padding: 0px;
-}
-
-.btn-toggle-nav {
+.dropbtn {
     width: 60px;
     height: 100%;
-    background-color: orange;
+    background-color: darkslateblue;
     background-image: url("menu.png");
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 50%;
     background-position: center;
+    padding: 20px;
     cursor: pointer;
 }
-
-.btn-toggle-nav:hover {
-    background-color:darkslateblue;
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: darkmagenta;
 }
-
-.nav-main ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 15px;
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
-
-.nav-main ul li {
-    list-style: none;
-    line-height: 60px;
-}
-
-.nav-main ul li a {
-    display: block;
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
     height: 100%;
-    padding: 0 10px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #111;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-}
-
-.nav-sidebar {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: calc(100vh - 60px);
-    padding: 0 5px;
-    background-color: #666;
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav-sidebar ul{
-    padding-top: 15px;
-    overflow: hidden;
-    visibility: hidden;
-}
-
-.nav-sidebar ul li{
-    line-height: 60px;
-    list-style: none;
-}
-
-.nav-sidebar ul li span, .nav-sidebar ul li a{
-    display: block;
-    height: 60px;
-    padding: 0 10px;
-    text-decoration: none;
-    text-transform: uppercase;
     color: yellowgreen;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
 }
 
-.nav-sidebar ul li a:hover{
-    background-color: #222;
+.dropdown-content a {
+    color: yellowgreen;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #222
+}
+
+.dropdown-content ul li{
+    line-height: 60px;
+    list-style: none;
+}
+
+.show {
+    display: block;
 }
 
 .blauw {
@@ -97,18 +68,3 @@ body {
     background-color: red;
 }
 
-.blauw body {
-    background-color: blue;
-}
-
-.geel body {
-    background-color: yellow;
-}
-
-.groen body {
-    background-color: green;
-}
-
-.rood body {
-    background-color: red;
-}
